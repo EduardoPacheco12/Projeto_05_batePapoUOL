@@ -1,11 +1,22 @@
 @media (max-width: 767px) {
     body {
-        background: #E5E5E5;
+        background: #F3F3F3;
         font-family: 'Roboto', sans-serif;
     }
 
+    strong {
+        font-weight: bold;
+    }
+
+    span {
+        font-weight: 400;
+        color: #AAAAAA;
+    }
+
+    /*Parte de cima do Layout*/
     .topo {
         background-color: #FFFFFF;
+        width: 100%;
         height: 80px;
         display: flex;
         justify-content: space-between;
@@ -28,6 +39,72 @@
         margin-right: 22px;
     }
 
+    /*Layout do chat*/
+    .mensagens {
+        width: 100%;
+        background-color: cadetblue;
+        margin-top: 90px;
+        margin-bottom: 86px;
+    }
+
+    .notificacao-entrada{
+        background-color: #DCDCDC;
+        border-radius: 2px;
+        display: flex;
+        margin-bottom: 4px;
+    }
+
+    .notificacao-entrada p {
+        margin: 10px 0 10px 8px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .mensagem-chat {
+        background-color: #FFFFFF;
+        border-radius: 2px;
+        display: flex;
+        word-wrap: break-word;
+        margin-bottom: 4px;
+    }
+
+    .mensagem-chat p {
+        margin: 10px 0 10px 8px;
+        font-size: 14px;
+        line-height: 16px;
+       
+    }
+
+    .mensagem-privada {
+        background-color: #FFDEDE;
+        border-radius: 2px;
+        display: flex;
+        word-wrap: break-word;
+        margin-bottom: 4px;
+    }
+
+    .mensagem-privada p {
+        margin: 10px 0 10px 8px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .notificacao-saida{
+        background-color: #DCDCDC;
+        border-radius: 2px;
+        display: flex;
+        margin-bottom: 4px;
+    }
+
+    .notificacao-saida p {
+        margin: 10px 0 10px 8px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+
+
+    /*Parte de baixo do Layout*/
     .fundo {
         background-color: #FFFFFF;
         height: 80px;

@@ -20,6 +20,20 @@
                 <ion-icon name="people-sharp"></ion-icon>
             </div>
         </div>
+        <div class="mensagens">
+            <div class="notificacao-entrada">
+                <p><span>(${horarioAtualizado})</span> <strong>${nomeUsuario}</strong> entra na sala...</p>
+            </div>
+            <div class="mensagem-chat">
+                <p><span>(${horarioAtualizado})</span> <strong>${nomeUsuario}</strong> para <strong>Todos</strong>: Bom dia</p>
+            </div>
+            <div class="mensagem-privada">
+                <p><span>(${horarioAtualizado})</span> <strong>${nomeUsuario}</strong> reservadamente para <strong>${pessoaSelecionada}</strong>: Oi gatinha, quer tc?</p>
+            </div>
+            <div class="notificacao-saida">
+                <p><span>(${horarioAtualizado})</span> <strong>${nomeUsuario}</strong> sai na sala...</p>
+            </div>
+        </div>
         <div class="fundo">
             <div class="escrever-texto">
                 <input placeholder="Escreva aqui..." type="text">
@@ -29,6 +43,7 @@
             </div> 
         </div>
 
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
         <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
         <script src="script.js"></script>
     </body>
