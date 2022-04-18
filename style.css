@@ -106,6 +106,10 @@
         height: 30px;
         border: none;
         outline: none;
+        color: #000000;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
     }
 
     .escrever-texto input::placeholder {

@@ -30,7 +30,6 @@ function buscarMensagens() {
 
 function atualizarMensagens(response) {
     arrayMensagens = response.data;
-    console.log(arrayMensagens);
     armazenamentoMensagens = document.querySelector(".mensagens");
     armazenamentoMensagens.innerHTML = "";
     for (let i = 0; i < arrayMensagens.length; i++) {
@@ -62,10 +61,14 @@ function atualizarMensagens(response) {
 
 function enviarMensagem() {
     let valorDigitado = document.querySelector("input").value;
-    const objetoMensagem = {from: `${nomeUsuario}`, to: "Todos", text: `${valorDigitado}`, type: "message" };
-    const requisicaoPost = axios.post('https://mock-api.driven.com.br/api/v6/uol/messages', objetoMensagem);
-    buscarMensagens();
-    requisicaoPost.catch(tratarErroEnvio);
+    if (valorDigitado === "") {
+        alert("Digite algo pra mensagem ser enviada");
+    } else {
+        const objetoMensagem = {from: `${nomeUsuario}`, to: "Todos", text: `${valorDigitado}`, type: "message" };
+        const requisicaoPost = axios.post('https://mock-api.driven.com.br/api/v6/uol/messages', objetoMensagem);
+        buscarMensagens();
+        requisicaoPost.catch(tratarErroEnvio);
+    }
 
 }
 
