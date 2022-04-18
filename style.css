@@ -16,7 +16,6 @@
     /*Parte de cima do Layout*/
     .topo {
         background-color: #FFFFFF;
-        width: 100%;
         height: 80px;
         display: flex;
         justify-content: space-between;
@@ -41,9 +40,9 @@
 
     /*Layout do chat*/
     .mensagens {
-        width: 100%;
         margin-top: 90px;
         margin-bottom: 86px;
+        word-wrap: break-word;
     }
 
     .notificacao-entrada-saida{
@@ -63,7 +62,6 @@
         background-color: #FFFFFF;
         border-radius: 2px;
         display: flex;
-        word-wrap: break-word;
         margin-bottom: 4px;
     }
 
@@ -71,6 +69,7 @@
         margin: 10px 0 10px 8px;
         font-size: 14px;
         line-height: 16px;
+        word-break: break-word;
        
     }
 
@@ -78,7 +77,6 @@
         background-color: #FFDEDE;
         border-radius: 2px;
         display: flex;
-        word-wrap: break-word;
         margin-bottom: 4px;
     }
 
@@ -86,6 +84,7 @@
         margin: 10px 0 10px 8px;
         font-size: 14px;
         line-height: 16px;
+        word-break: break-word;
     }
 
     /*Parte de baixo do Layout*/

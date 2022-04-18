@@ -6,10 +6,10 @@ let armazenamentoMensagens = 0;
 function solicitacaoEntradaServer() {
     const requisicaoPost = axios.post('https://mock-api.driven.com.br/api/v6/uol/participants', objetoNome);
     requisicaoPost.then(entrarServer);
-    requisicaoPost.catch(tratarErro);
+    requisicaoPost.catch(tratarErroEntrada);
 }
 
-function tratarErro() {
+function tratarErroEntrada() {
     alert("Esse nome já está sendo utilizado, tente novamente");
     window.location.reload();
 }
@@ -58,6 +58,20 @@ function atualizarMensagens(response) {
     }
     let ultimaPosicao = document.querySelector(".mensagens div:last-child");
     ultimaPosicao.scrollIntoView();
+}
+
+function enviarMensagem() {
+    let valorDigitado = document.querySelector("input").value;
+    const objetoMensagem = {from: `${nomeUsuario}`, to: "Todos", text: `${valorDigitado}`, type: "message" };
+    const requisicaoPost = axios.post('https://mock-api.driven.com.br/api/v6/uol/messages', objetoMensagem);
+    buscarMensagens();
+    requisicaoPost.catch(tratarErroEnvio);
+
+}
+
+function tratarErroEnvio() {
+    alert("Usuário não está mais logado, favor refazer o login");
+    window.location.reload();
 }
 
 solicitacaoEntradaServer();
