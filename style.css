@@ -42,19 +42,18 @@
     /*Layout do chat*/
     .mensagens {
         width: 100%;
-        background-color: cadetblue;
         margin-top: 90px;
         margin-bottom: 86px;
     }
 
-    .notificacao-entrada{
+    .notificacao-entrada-saida{
         background-color: #DCDCDC;
         border-radius: 2px;
         display: flex;
         margin-bottom: 4px;
     }
 
-    .notificacao-entrada p {
+    .notificacao-entrada-saida p {
         margin: 10px 0 10px 8px;
         font-size: 14px;
         line-height: 16px;
@@ -88,21 +87,6 @@
         font-size: 14px;
         line-height: 16px;
     }
-
-    .notificacao-saida{
-        background-color: #DCDCDC;
-        border-radius: 2px;
-        display: flex;
-        margin-bottom: 4px;
-    }
-
-    .notificacao-saida p {
-        margin: 10px 0 10px 8px;
-        font-size: 14px;
-        line-height: 16px;
-    }
-
-
 
     /*Parte de baixo do Layout*/
     .fundo {
