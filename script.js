@@ -77,4 +77,12 @@ function tratarErroEnvio() {
     window.location.reload();
 }
 
+document.addEventListener("keydown", function(e) {
+    if(e.keyCode === 13) {
+        enviarMensagem();
+    }
+});
+
+
+
 solicitacaoEntradaServer();
